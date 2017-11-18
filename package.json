@@ -26,7 +26,8 @@
   "homepage": "https://github.com/jmaicaaan/file-meta-microservice#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "multer": "^1.3.0"
   },
   "devDependencies": {
     "assert": "^1.4.1",

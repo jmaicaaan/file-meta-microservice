@@ -1,5 +1,7 @@
+import form from '../../templates/form.html';
+
 function introHandler(req, res) {
-  res.send('Hello World');
+  res.sendFile(form);
 }
 
 export { introHandler } 
