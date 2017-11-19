@@ -16,8 +16,6 @@ var app = (0, _express2.default)();
 var port = process.env.PORT || 3000;
 (0, _routes.routes)(app);
 
-app.use(_express2.default.static(__dirname + '/templates'));
-
 module.exports = app.listen(port, function () {
   return console.log('App is listening on port ' + port);
 });
