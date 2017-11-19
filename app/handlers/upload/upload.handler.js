@@ -3,7 +3,8 @@ function uploadHandler(req, res) {
   if (file) {
     return res.send({ size: file.size, filename: file.originalname });
   }
-  return res.send('No file submitted');
+  return res.status(500)
+    .send('No file submitted');
 }
 
 export { uploadHandler } 

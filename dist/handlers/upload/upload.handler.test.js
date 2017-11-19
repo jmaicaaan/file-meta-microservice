@@ -21,5 +21,8 @@ describe('upload', function () {
         done(err);
       });
     });
+    it('should not be able to upload file with empty', function (done) {
+      server(app).post('/upload').attach('attachment', '').expect(500, done);
+    });
   });
 });

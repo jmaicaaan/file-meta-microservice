@@ -25,5 +25,11 @@ describe('upload', () => {
           done(err);
         });
     });
+    it('should not be able to upload file with empty', done => {
+      server(app)
+        .post('/upload')
+        .attach('attachment', '')
+        .expect(500, done);
+    });
   });
 });
